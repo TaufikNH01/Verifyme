@@ -6,6 +6,9 @@ import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots 
 import matplotlib.pyplot as plt
+import dm  
+from some_module import dm  # Adjust 'some_module' to the actual module name
+
 
 
 # Set page configuration
@@ -15,7 +18,18 @@ st.set_page_config(
 )
 
 # === COMPONENT 1 ===
+#st.title("Migration Visualization")
+col1, col2, col3 = st.columns(3)
 
+with col1:
+   st.image("hertie2.jpg", width=400, caption="")  # Replace 'path_to_your_logo.png' with the path to your logo
+
+with col2:
+   st.write("")
+
+with col3:
+   st.image("logo.jpg", width=200, caption="")
+    
 ## 1.Challenges
 st.title("Lost Souls in the Unknown")
 st.markdown("Missing Migrants Project by Bueno Team")
@@ -134,7 +148,7 @@ st.markdown("""
 Migrants from Northern Africa resort to various measures to cross borders, often navigating through different and perilous routes. Against this backdrop, we offer a route assessment over time, presenting distinct risk profiles.
 """)
 
-st.subheader("Incident Assessment")
+# st.subheader("Incident Assessment")
 
 # Set page configuration
 # st.set_page_config(
@@ -144,17 +158,17 @@ st.subheader("Incident Assessment")
 
 
 # Function name and logo
-#st.title("Migration Visualization")
-col1, col2, col3 = st.columns(3)
+# #st.title("Migration Visualization")
+# col1, col2, col3 = st.columns(3)
 
-with col1:
-   st.image("hertie2.jpg", width=400, caption="")  # Replace 'path_to_your_logo.png' with the path to your logo
+# with col1:
+#    st.image("hertie2.jpg", width=400, caption="")  # Replace 'path_to_your_logo.png' with the path to your logo
 
-with col2:
-   st.write("")
+# with col2:
+#    st.write("")
 
-with col3:
-   st.image("logo.jpg", width=200, caption="")
+# with col3:
+#    st.image("logo.jpg", width=200, caption="")
 
 st.subheader("Incident Visualization")  
 
