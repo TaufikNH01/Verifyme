@@ -8,6 +8,11 @@ from plotly.subplots import make_subplots
 import matplotlib.pyplot as plt
 
 
+# Set page configuration
+st.set_page_config(
+    layout="wide",
+    initial_sidebar_state="expanded"  # Ensures the sidebar is always open by default
+)
 
 # === COMPONENT 1 ===
 
@@ -132,10 +137,10 @@ Migrants from Northern Africa resort to various measures to cross borders, often
 st.subheader("Incident Assessment")
 
 # Set page configuration
-st.set_page_config(
-    layout="wide",
-    initial_sidebar_state="expanded"  # Ensures the sidebar is always open by default
-)
+# st.set_page_config(
+#     layout="wide",
+#     initial_sidebar_state="expanded"  # Ensures the sidebar is always open by default
+# )
 
 
 # Function name and logo
