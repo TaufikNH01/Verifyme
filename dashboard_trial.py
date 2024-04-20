@@ -8,6 +8,7 @@ from plotly.subplots import make_subplots
 import matplotlib.pyplot as plt
 import data_munging as dm
 import plot_migration
+import geopandas as gpd
 
 
 
