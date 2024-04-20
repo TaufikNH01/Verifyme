@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 ## 1.Challenges
 st.title("Lost Souls in the Unknown")
 st.markdown("Missing Migrants Project by Bueno Team")
-st.image("/Users/pikpes/Downloads/IOM_Migration.jpg", caption="Missing Souls in the Sea", use_column_width=True)
+st.image("IOM_Migration.jpg", caption="Missing Souls in the Sea", use_column_width=True)
 
 
 st.markdown("""
