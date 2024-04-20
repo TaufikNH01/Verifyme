@@ -6,8 +6,8 @@ import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots 
 import matplotlib.pyplot as plt
-import dm  
-from some_module import dm  # Adjust 'some_module' to the actual module name
+import data_munging as dm
+import plot_migration
 
 
 
