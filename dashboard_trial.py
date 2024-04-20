@@ -7,15 +7,11 @@ import plotly.express as px
 from plotly.subplots import make_subplots 
 import matplotlib.pyplot as plt
 
-# === SIDEBAR CONFIGURATION ===
-# st.sidebar.header("Dashboard Configuration")
-# st.sidebar.markdown("Use the options below to customize the visualizations.")
-# # Add more sidebar configurations if needed
 
 
 # === COMPONENT 1 ===
 
-## 1.Challenge problem and solution 
+## 1.Challenges
 st.title("Lost Souls in the Unknown")
 st.markdown("Missing Migrants Project by Bueno Team")
 st.image("/Users/pikpes/Downloads/IOM_Migration.jpg", caption="Missing Souls in the Sea", use_column_width=True)
@@ -28,7 +24,7 @@ In July 2019, a migrant boat carrying approximately 80 people departed from Zarz
 # === 1st Viz ===
 
 # Load the data
-df = pd.read_csv("/Users/pikpes/Downloads/Missing_Migrants_Global_Figures_allData.csv")
+df = pd.read_csv("Missing_Migrants_Global.csv")
 
 # Sidebar for visualization selection
 st.sidebar.header("Visualization Configuration")
@@ -142,5 +138,5 @@ place the route assessment here
 st.subheader("Improving Data Acquisition")
 st.markdown("Introducing Verify.me, a low-bandwidth web app accessible almost anywhere on Earth, empowering registered and authorized organizations across Europe and Africa to collaborate seamlessly. Tailored specifically to tackle data identification challenges, our platform streamlines data sharing, ensuring vital information is readily available and actionable, regardless of location.")
 
-st.image("/Users/pikpes/Downloads/Blue Modern Mobile Application Presentation/1.png", use_column_width=True)
-st.image("/Users/pikpes/Downloads/Blue Modern Mobile Application Presentation/2.png", use_column_width=True)
+st.image("VM1.png", use_column_width=True)
+st.image("VM2.png", use_column_width=True)
