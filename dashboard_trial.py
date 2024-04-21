@@ -16,7 +16,7 @@ import geopandas as gpd
 st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
-    theme={base: "light"}# Ensures the sidebar is always open by default
+    theme={base: "light"}
 )
 
 # === COMPONENT 1 ===
