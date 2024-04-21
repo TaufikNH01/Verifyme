@@ -20,8 +20,6 @@ st.set_page_config(
 
 # === COMPONENT 1 ===
 #st.title("Migration Visualization")
-st.title("Lost Souls in the Unknown")
-st.markdown("Missing Migrants Project by Bueno Team")
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -32,6 +30,9 @@ with col2:
 
 with col3:
    st.image("logo.jpg", width=200, caption="")
+
+st.title("Lost Souls in the Unknown")
+st.markdown("Missing Migrants Project by Bueno Team")
     
 ## 1.Challenges
 st.image("IOM_Migration.jpg", caption="Missing Souls in the Sea", use_column_width=True)
