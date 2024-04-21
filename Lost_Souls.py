@@ -47,7 +47,7 @@ with st.sidebar:
 
 
 st.title("Lost Souls in the Unknown")
-st.markdown("Missing Migrants Project by Bueno Team")
+st.markdown("Missing Migrants Project by Combined Forces")
 st.title("Incident Visualization")  
 
 
