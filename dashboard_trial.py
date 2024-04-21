@@ -20,10 +20,12 @@ st.set_page_config(
 
 # === COMPONENT 1 ===
 #st.title("Migration Visualization")
+st.title("Lost Souls in the Unknown")
+st.markdown("Missing Migrants Project by Bueno Team")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-   st.image("hertie2.jpg", width=400, caption="")  # Replace 'path_to_your_logo.png' with the path to your logo
+   st.image("hertie2.jpg", width=400, caption="")  
 
 with col2:
    st.write("")
@@ -32,8 +34,6 @@ with col3:
    st.image("logo.jpg", width=200, caption="")
     
 ## 1.Challenges
-st.title("Lost Souls in the Unknown")
-st.markdown("Missing Migrants Project by Bueno Team")
 st.image("IOM_Migration.jpg", caption="Missing Souls in the Sea", use_column_width=True)
 
 
