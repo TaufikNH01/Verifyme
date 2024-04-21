@@ -46,7 +46,8 @@ with st.sidebar:
     selected_years = st.multiselect("Choose Years", incident_year_choices)
 
 
-
+st.title("Lost Souls in the Unknown")
+st.markdown("Missing Migrants Project by Bueno Team")
 st.title("Incident Visualization")  
 
 
@@ -83,8 +84,8 @@ else:
 
     
 ## 1.Challenges
-st.title("Lost Souls in the Unknown")
-st.markdown("Missing Migrants Project by Bueno Team")
+# st.title("Lost Souls in the Unknown")
+# st.markdown("Missing Migrants Project by Bueno Team")
 st.image("IOM_Migration.jpg", caption="Missing Souls in the Sea", use_column_width=True)
 
 
