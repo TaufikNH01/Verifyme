@@ -31,10 +31,10 @@ with col2:
 with col3:
    st.image("logo.jpg", width=200, caption="")
 
-st.title("Lost Souls in the Unknown")
-st.markdown("Missing Migrants Project by Bueno Team")
     
 ## 1.Challenges
+st.title("Lost Souls in the Unknown")
+st.markdown("Missing Migrants Project by Bueno Team")
 st.image("IOM_Migration.jpg", caption="Missing Souls in the Sea", use_column_width=True)
 
 
