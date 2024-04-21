@@ -75,7 +75,8 @@ else:
     
 
 if filtered_data.empty:
-    st.write("No incident happened or Showed in map because no year selected so please select Years from sidebar menu.")
+    st.write("Default incident Showed in map because no year selected so please select Years from sidebar menu.")
+    st.image("defaultMap.jpg")
 else:
     migration_plot = plot_migration.build_migration_chart(incidents_data, selectbox_cause_of_death, selectbox_migration_route, selected_years)
     st.plotly_chart(migration_plot)
@@ -84,6 +85,9 @@ else:
 
     
 ## 1.Challenges
+# st.title("Lost Souls in the Unknown")
+# st.markdown("Missing Migrants Project by Combined Forces")
+# st.title("Incident Visualization")  
 # st.title("Lost Souls in the Unknown")
 # st.markdown("Missing Migrants Project by Bueno Team")
 st.image("IOM_Migration.jpg", caption="Missing Souls in the Sea", use_column_width=True)
