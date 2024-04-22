@@ -48,40 +48,40 @@ with st.sidebar:
 
 st.title("Lost Souls in the Unknown")
 st.markdown("Missing Migrants Project by Combined Forces")
-st.title("Incident Visualization")  
+# st.title("Incident Visualization")  
 
 
 
-filtered_data = incidents_data[(incidents_data['CauseDeath'] == selectbox_cause_of_death) & (incidents_data['MigrationRoute'] == selectbox_migration_route)  &
-    (incidents_data['IncidentYear'].isin(selected_years))]
+# filtered_data = incidents_data[(incidents_data['CauseDeath'] == selectbox_cause_of_death) & (incidents_data['MigrationRoute'] == selectbox_migration_route)  &
+#     (incidents_data['IncidentYear'].isin(selected_years))]
 
 
 
-if selectbox_cause_of_death == 'All' and selectbox_migration_route == 'All':
-    filtered_data = incidents_data[
-        incidents_data['IncidentYear'].isin(selected_years)
-    ]
-elif selectbox_cause_of_death == 'All':
-     filtered_data = incidents_data[(incidents_data['MigrationRoute'] == selectbox_migration_route) & (incidents_data['IncidentYear'].isin(selected_years))]
+# if selectbox_cause_of_death == 'All' and selectbox_migration_route == 'All':
+#     filtered_data = incidents_data[
+#         incidents_data['IncidentYear'].isin(selected_years)
+#     ]
+# elif selectbox_cause_of_death == 'All':
+#      filtered_data = incidents_data[(incidents_data['MigrationRoute'] == selectbox_migration_route) & (incidents_data['IncidentYear'].isin(selected_years))]
      
-elif selectbox_migration_route == 'All':
-    filtered_data = incidents_data[
-        (incidents_data['CauseDeath'] == selectbox_cause_of_death) &
-        (incidents_data['IncidentYear'].isin(selected_years))
-    ]
-else:
-    filtered_data = incidents_data[(incidents_data['CauseDeath'] == selectbox_cause_of_death) & (incidents_data['MigrationRoute'] == selectbox_migration_route)  &
-    (incidents_data['IncidentYear'].isin(selected_years))]
+# elif selectbox_migration_route == 'All':
+#     filtered_data = incidents_data[
+#         (incidents_data['CauseDeath'] == selectbox_cause_of_death) &
+#         (incidents_data['IncidentYear'].isin(selected_years))
+#     ]
+# else:
+#     filtered_data = incidents_data[(incidents_data['CauseDeath'] == selectbox_cause_of_death) & (incidents_data['MigrationRoute'] == selectbox_migration_route)  &
+#     (incidents_data['IncidentYear'].isin(selected_years))]
     
 
-if filtered_data.empty:
-    st.write("Default incident Showed in map because no year selected so please select Years from sidebar menu.")
-    st.image("defaultMap.jpg")
-else:
-    migration_plot = plot_migration.build_migration_chart(incidents_data, selectbox_cause_of_death, selectbox_migration_route, selected_years)
-    st.plotly_chart(migration_plot)
-   # migration_plot = plot_migration.build_migration_chart(filtered_data)
-   # st.plotly_chart(migration_plot)
+# if filtered_data.empty:
+#     st.write("Default incident Showed in map because no year selected so please select Years from sidebar menu.")
+#     st.image("defaultMap.jpg")
+# else:
+#     migration_plot = plot_migration.build_migration_chart(incidents_data, selectbox_cause_of_death, selectbox_migration_route, selected_years)
+#     st.plotly_chart(migration_plot)
+#    # migration_plot = plot_migration.build_migration_chart(filtered_data)
+#    # st.plotly_chart(migration_plot)
 
     
 ## 1.Challenges
@@ -228,6 +228,41 @@ Migrants from Northern Africa resort to various measures to cross borders, often
 
 # with col3:
 #    st.image("logo.jpg", width=200, caption="")
+
+st.title("Incident Visualization")  
+
+
+
+filtered_data = incidents_data[(incidents_data['CauseDeath'] == selectbox_cause_of_death) & (incidents_data['MigrationRoute'] == selectbox_migration_route)  &
+    (incidents_data['IncidentYear'].isin(selected_years))]
+
+
+
+if selectbox_cause_of_death == 'All' and selectbox_migration_route == 'All':
+    filtered_data = incidents_data[
+        incidents_data['IncidentYear'].isin(selected_years)
+    ]
+elif selectbox_cause_of_death == 'All':
+     filtered_data = incidents_data[(incidents_data['MigrationRoute'] == selectbox_migration_route) & (incidents_data['IncidentYear'].isin(selected_years))]
+     
+elif selectbox_migration_route == 'All':
+    filtered_data = incidents_data[
+        (incidents_data['CauseDeath'] == selectbox_cause_of_death) &
+        (incidents_data['IncidentYear'].isin(selected_years))
+    ]
+else:
+    filtered_data = incidents_data[(incidents_data['CauseDeath'] == selectbox_cause_of_death) & (incidents_data['MigrationRoute'] == selectbox_migration_route)  &
+    (incidents_data['IncidentYear'].isin(selected_years))]
+    
+
+if filtered_data.empty:
+    st.write("Default incident Showed in map because no year selected so please select Years from sidebar menu.")
+    st.image("defaultMap.jpg")
+else:
+    migration_plot = plot_migration.build_migration_chart(incidents_data, selectbox_cause_of_death, selectbox_migration_route, selected_years)
+    st.plotly_chart(migration_plot)
+   # migration_plot = plot_migration.build_migration_chart(filtered_data)
+   # st.plotly_chart(migration_plot)
 
 
 
